@@ -37,5 +37,5 @@ for (const element of dataArray){
     typesCountDynamic[elementType] += 1;
 }
 
-console.dir(typesCountDynamic)
+console.dir(typesCountDynamic);
 
