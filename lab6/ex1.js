@@ -3,7 +3,7 @@
 const pipe = (...fns) => {
   for (const fn of fns) {
     if (typeof fn !== 'function') {
-      throw new Error('All arguments should be functions');
+      throw new Error('Some arg is not a func');
     }
   }
   return (x) => fns.reduce((value, fn) => fn(value), x);
